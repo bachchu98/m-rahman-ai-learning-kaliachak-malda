@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  body {
+    background-color: #070b14;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Neon glow helper classes */
+.neon-glow-blue {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.4);
+}
+
+.neon-glow-purple {
+  box-shadow: 0 0 25px -5px rgba(168, 85, 247, 0.4);
+}
+
+.neon-glow-cyan {
+  box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.4);
+}
+
+.neon-border-blue {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: inset 0 0 15px rgba(59, 130, 246, 0.15), 0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+.neon-border-purple {
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: inset 0 0 15px rgba(168, 85, 247, 0.15), 0 0 15px rgba(168, 85, 247, 0.2);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070b14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
